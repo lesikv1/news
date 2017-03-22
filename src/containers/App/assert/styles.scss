@@ -1,9 +1,47 @@
-.nav{
-  width: 100%;
+div.container{
+  width: auto;
 }
 
+div.heads {
+  width: auto;
+  height: 42px;
+  background: #3b5998;
+}
+
+a.main,
+a.admin,
+a.newsList,
+a.login {
+  color: aliceblue;
+}
+
+a.main:hover,
+a.admin:hover,
+a.newsList:hover,
+a.login:hover {
+  color: #3b5998;
+}
+
+.nav{
+  width: 80%;
+  margin: auto;
+}
+
+li.main,
+li.admin,
+li.newsList,
+li.login {
+  //background: #fff;
+  background: #3b5998;
+
+}
 
 li.login,
 li.admin{
   float: right;
+}
+
+
+li.main:hover {
+  background: #3b5998;
 }

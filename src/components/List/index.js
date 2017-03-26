@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router'
+import React, { Component } from 'react';
+import { Link } from 'react-router';
+
+import './assert/styles.scss'
 
 export default class List extends Component {
   
@@ -15,17 +17,18 @@ export default class List extends Component {
   
   render() {
     return (
-      <div>
+      <div className='pois'>
         <div className='row'>
           <div className='col-md-12'>
-            <h3> List of genres </h3>
+            <h1> List of genres </h1>
           </div>
         </div>
         <div className='row'>
-        <div className='col-md-12'>Section /</div>
+          <div className='col-md-12'><h3>Section /</h3></div>
         <form className='col-md-4' onSubmit={this.handleSubmit}>
-          <input type='text' placeholder='genreName'/>
-          <button type='submit'>Go to</button>
+          <input type='text' className='form-control' placeholder='genreName'/>
+          <hr />
+          <button type='submit' className='btn btn-primary'>Go to</button>
         </form>
         </div>
         <hr />
@@ -33,31 +36,31 @@ export default class List extends Component {
           <div className='col-md-12'>
             <ul className='list'>
               <li className='list__item'>
-                <Link to='/genre/world/'>In world</Link>
+                <Link to='/genre/world/' className='btn btn-info'>In world</Link>
               </li>
               <li className='list__item'>
-                <Link to='/genre/policy/'>Policy</Link>
+                <Link to='/genre/policy/' className='btn btn-info'>Policy</Link>
               </li>
               <li className='list__item'>
-                <Link to='/genre/business/'>Business</Link>
+                <Link to='/genre/business/' className='btn btn-info'>Business</Link>
               </li>
               <li className='list__item'>
-                <Link to='/genre/sport/'>Sport</Link>
+                <Link to='/genre/sport/' className='btn btn-info'>Sport</Link>
               </li>
               <li className='list__item'>
-                <Link to='/genre/auto/'>Auto</Link>
+                <Link to='/genre/auto/' className='btn btn-info'>Auto</Link>
               </li>
               <li className='list__item'>
-                <Link to='/genre/science/'>Science</Link>
+                <Link to='/genre/science/' className='btn btn-info'>Science</Link>
               </li>
               <li className='list__item'>
-                <Link to='/genre/finance/'>Finance</Link>
+                <Link to='/genre/finance/' className='btn btn-info'>Finance</Link>
               </li>
               <li className='list__item'>
-                <Link to='/genre/property/'>Property</Link>
+                <Link to='/genre/property/' className='btn btn-info'>Property</Link>
               </li>
               <li className='list__item'>
-                <Link to='/genre/conflicts/'>Conflicts</Link>
+                <Link to='/genre/conflicts/' className='btn btn-info'>Conflicts</Link>
               </li>
             </ul>
           </div>

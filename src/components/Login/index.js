@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 
+import './assert/styles.scss'
+
 export default class Login extends Component {
   constructor() {
     super()
@@ -18,12 +20,16 @@ export default class Login extends Component {
   }
   render() {
     return (
-      <div className='row'>
-        <div className='col-md-12'>Please enter your login:</div>
-        <form className='col-md-4' onSubmit={this.handleSubmit}>
-          <input type='text' placeholder='login'/>
-          <button type='submit'>Sign in</button>
-        </form>
+      <div className='logins'>
+        <div className='row'>
+          <div className='col-md-12'><h1>Please enter your login:</h1></div>
+          <form className='col-md-4' onSubmit={this.handleSubmit}>
+            <hr />
+            <input type='text' className='form-control' placeholder='login'/>
+            <hr />
+            <button type='submit' className='btn btn-primary'>Sign in</button>
+          </form>
+        </div>
       </div>
     )
   }

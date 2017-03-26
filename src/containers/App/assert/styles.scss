@@ -15,11 +15,9 @@ a.login {
   color: aliceblue;
 }
 
-a.main:hover,
-a.admin:hover,
-a.newsList:hover,
-a.login:hover {
-  color: #3b5998;
+.nav > li > a:hover, 
+.nav > li > a:focus {
+  background-color: #042161;
 }
 
 .nav{

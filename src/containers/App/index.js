@@ -10,9 +10,10 @@ export default class App extends Component {
         <div className='heads'>
           <ul className='nav nav-pills'>
             <li className='main'><NavLink onlyActiveOnIndex={true} to='/' className='main'>Main</NavLink></li>
-            <li className='admin'><NavLink to='/admin' className='admin'>Admin</NavLink></li>
             <li className='newsList'><NavLink to='/list' className='newsList'>News List</NavLink></li>
-            <li className='login'><NavLink to='/login' className='login'>Sign in</NavLink></li>
+            <li className='country'><NavLink to='/country' className='country'>Country</NavLink></li>
+            <li className='signin'><NavLink to='/signin' className='signin'>Sign In</NavLink></li>
+            <li className='signup'><NavLink to='/signup' className='signup'>Sign Up</NavLink></li>
           </ul>
         </div>
         {this.props.children}

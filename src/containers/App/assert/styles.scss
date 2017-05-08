@@ -9,9 +9,10 @@ div.heads {
 }
 
 a.main,
-a.admin,
+a.signup,
 a.newsList,
-a.login {
+a.signin,
+a.country {
   color: aliceblue;
 }
 
@@ -26,16 +27,15 @@ a.login {
 }
 
 li.main,
-li.admin,
-li.newsList,
-li.login {
-  //background: #fff;
+li.signin,
+li.signup,
+li.newsList{
   background: #3b5998;
 
 }
 
-li.login,
-li.admin{
+li.signin,
+li.signup{
   float: right;
 }
 
